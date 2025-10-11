@@ -15,18 +15,96 @@ main{
   background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.8fr 1fr;
   grid-template-areas:
     "nav nav"
     "headline details"
     "image image";
-  gap: 10px;
+  gap: 3px;
   
 }
 
 main .nav{
-  background-color: rosybrown;
+  background-color: #ffffff;
   grid-area: nav;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-1{
+  margin-right: 12rem;
+}
+
+.nav-3{
+  margin-left: 15rem;
+  padding-left: 2rem;
+}
+
+main .nav .nav-1> h1{
+  font-size: 26px;
+  font-weight: 900;
+}
+
+main .nav .nav-2 ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+main >nav > .nav-3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-3 button{
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightblue;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-3 > #button-1{
+  background-color: transparent;
+  border: 1px solid #0061fd;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.nav-3 > #button-1:hover{
+  background-color: #0061fd;
+  color: white;
+  transition: 0.3s all ease;
+}
+
+.nav-3 > #button-2:hover{
+  background-color: transparent;
+  color: black;
+  transition: 0.3s all ease;
+  border: 1px solid #0061fd;
+}
+
+.nav-3 > #button-2{
+  background-color: #0061fd;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+main .nav a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
 
 main .headline{
