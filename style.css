@@ -108,7 +108,6 @@ main .nav a{
 }
 
 main .headline{
-  background-color: lightblue;
   grid-area: headline;
 }
 
@@ -120,4 +119,14 @@ main .details{
 main .image{
   background-color: lightcoral;
   grid-area: image;
+}
+
+.headline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 2rem;
 }
