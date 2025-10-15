@@ -27,6 +27,7 @@ main {
   background-color: #fff;
 }
 .page-1 .nav {
+  height: 7rem;
   grid-area: nav;
   display: flex;
   align-items: center;
