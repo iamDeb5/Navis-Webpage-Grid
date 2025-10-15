@@ -12,7 +12,7 @@ html, body {
 main {
   width: 100%;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
 }
@@ -22,53 +22,45 @@ main {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: minmax(70px, auto) minmax(255px, auto) 1fr;;
-  grid-template-areas:
-    "nav nav"
-    "headline details"
-    "image image";
-  background-color: #ffffff;
+  grid-template-rows: minmax(70px, auto) minmax(255px, auto) 1fr;
+  grid-template-areas: "nav nav" "headline details" "image image";
+  background-color: #fff;
 }
-
-/* NAVBAR */
-.nav {
+.page-1 .nav {
   grid-area: nav;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #fff;
 }
-
-.nav-1 {
+.page-1 .nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.page-1 .nav .nav-1 {
   margin-right: 12rem;
 }
-
-.nav-3 {
-  margin-left: 15rem;
-  padding-left: 2rem;
-}
-
-.nav-1 h1 {
+.page-1 .nav .nav-1 h1 {
   font-size: 26px;
   font-weight: 900;
 }
-
-.nav-2 ul {
+.page-1 .nav .nav-2 ul {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
 }
-
-.nav-3 {
+.page-1 .nav .nav-3 {
+  margin-left: 15rem;
+  padding-left: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
-
-.nav-3 button {
+.page-1 .nav .nav-3 button {
   padding: 8px 16px;
   border: none;
   border-radius: 5px;
@@ -76,45 +68,33 @@ main {
   font-weight: 600;
   cursor: pointer;
 }
-
-#button-1 {
+.page-1 .nav .nav-3 #button-1 {
   background-color: transparent;
   border: 1px solid #0061fd;
   border-radius: 50px;
-  cursor: pointer;
   padding: 10px 15px;
+  cursor: pointer;
 }
-
-#button-1:hover {
+.page-1 .nav .nav-3 #button-1:hover {
   background-color: #0061fd;
   color: white;
   transition: 0.3s all ease;
 }
-
-#button-2 {
+.page-1 .nav .nav-3 #button-2 {
   background-color: #0061fd;
   border: none;
   color: white;
   border-radius: 50px;
-  cursor: pointer;
   padding: 10px 20px;
+  cursor: pointer;
 }
-
-#button-2:hover {
+.page-1 .nav .nav-3 #button-2:hover {
   background-color: transparent;
   color: black;
   border: 1px solid #0061fd;
   transition: 0.3s all ease;
 }
-
-.nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}
-
-/* PAGE 1 GRID AREAS */
-.headline {
+.page-1 .headline {
   grid-area: headline;
   display: flex;
   align-items: center;
@@ -125,8 +105,7 @@ main {
   padding: 0 2rem;
   background-color: #f6f7f9;
 }
-
-.details {
+.page-1 .details {
   grid-area: details;
   padding: 2rem;
   background-color: #f6f7f9;
@@ -135,8 +114,7 @@ main {
   align-items: flex-start;
   justify-content: center;
 }
-
-.details p {
+.page-1 .details p {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 1.3rem;
@@ -147,80 +125,70 @@ main {
   letter-spacing: 0.5px;
   word-spacing: 1px;
 }
-
-/* BUTTONS */
-.button-1 {
-  background-color: #0061fd;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+.page-1 .details #button-container {
+  display: flex;
+  align-items: center;
+}
+.page-1 .details .button-1, .page-1 .details .button-2 {
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
-  margin-right: 1rem;
   font-size: 16px;
+  padding: 10px 20px;
+  transition: 0.3s all ease;
 }
-
-.button-1 i {
+.page-1 .details .button-1 {
+  background-color: #0061fd;
+  color: white;
+  border: none;
+  margin-right: 1rem;
+}
+.page-1 .details .button-1 i {
   font-size: 18px;
   vertical-align: middle;
   margin-left: 5px;
 }
-
-.button-1:hover {
+.page-1 .details .button-1:hover {
   background-color: transparent;
   color: black;
   border: 1px solid #0061fd;
-  transition: 0.3s all ease;
 }
-
-.button-2 {
+.page-1 .details .button-2 {
   background-color: transparent;
   color: black;
   border: 1px solid #0061fd;
-  padding: 10px 20px;
-  border-radius: 50px;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 16px;
 }
-
-.button-2:hover {
+.page-1 .details .button-2:hover {
   background-color: #0061fd;
   color: white;
-  transition: 0.3s all ease;
 }
-
-.image {
+.page-1 .image {
   grid-area: image;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f6f7f9;
 }
-
-.image img{
+.page-1 .image img {
   width: 90%;
   height: 85%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 30px;
 }
 
-.page-2{
+.page-2 {
   width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(350px, auto) 1fr;
-  grid-template-areas:
-    "heading heading"
-    "left-main right-main";
-  background-color: #ffffff;
+  grid-template-areas: "heading heading" "left-main right-main";
+  background-color: #fff;
 }
-
-.heading-element{
+.page-2 .heading-element {
   grid-area: heading;
-  background-color: #ffffff;
+  background-color: #fff;
   height: 100%;
   width: 100%;
   display: flex;
@@ -232,24 +200,13 @@ main {
   padding: 0 1rem;
   gap: 10px;
 }
-.left-main{
-  grid-area: left-main;
-  background-color: rgb(158, 231, 173);
-}
-.right-main{
-  grid-area: right-main;
-  background-color: rgb(158, 197, 231);
-}
-
-#heading-box h2{
+.page-2 .heading-element #heading-box h2 {
   font-size: 4.5rem;
   font-weight: 500;
   margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.923);
-  
 }
-
-#heading-box p{
+.page-2 .heading-element #heading-box p {
   font-size: 1.5rem;
   font-weight: 500;
   color: #adadad;
@@ -257,3 +214,11 @@ main {
   text-align: center;
   padding: 0 2rem;
 }
+.page-2 .left-main {
+  grid-area: left-main;
+  background-color: rgb(158, 231, 173);
+}
+.page-2 .right-main {
+  grid-area: right-main;
+  background-color: rgb(158, 197, 231);
+}/*# sourceMappingURL=style.css.map */
