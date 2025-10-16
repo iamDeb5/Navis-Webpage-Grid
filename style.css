@@ -400,6 +400,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 4.5rem;
+  padding-top: 6rem;
 }
 .page-4 #headline #left-headline button {
   padding: 10px 20px;
@@ -417,4 +418,20 @@ main {
   background-color: rgba(0, 0, 0, 0.634);
   color: white;
   transition: 0.3s all ease;
+}
+.page-4 #headline #left-headline h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgbaa(0, 0, 0, 0.911);
+  line-height: 0.94;
+}
+.page-4 #headline #right-headline p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #848688;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  padding-left: 2rem;
+  margin-top: 5rem;
 }/*# sourceMappingURL=style.css.map */

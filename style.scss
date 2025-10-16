@@ -455,6 +455,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 4.5rem;
+    padding-top: 6rem;
     #left-headline{
       button{
         padding: 10px 20px;
@@ -469,12 +470,33 @@ main {
         margin-bottom: 2rem;
         
         &:hover{
-            background-color: rgba(0, 0, 0, 0.634);
-            color: white;
-            transition: $transition;
+          background-color: rgba(0, 0, 0, 0.634);
+          color: white;
+          transition: $transition;
         }
+      }
+      h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: rgbaa(0, 0, 0, 0.911);
+        line-height: 0.94;
+      }
+    }
+    #right-headline{
+      p{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $text-color ;
+        line-height: 1.3;
+        // margin-right: 0.5rem;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+        // margin-bottom: 2rem;
+        padding-left: 2rem;
+        margin-top: 5rem;
       }
     }
   }
 }
+
 
