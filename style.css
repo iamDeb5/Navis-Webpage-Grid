@@ -279,4 +279,111 @@ main {
   -o-object-position: center;
      object-position: center;
   border-radius: 30px;
+}
+
+.page-3 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+.page-3 .top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+.page-3 .top-section #headlines {
+  padding-left: 4.5rem;
+  margin-right: 1rem;
+}
+.page-3 .top-section #headlines h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgbaa(0, 0, 0, 0.911);
+  line-height: 0.94;
+}
+.page-3 .top-section #headlines button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #848688;
+  border: 1px solid rgba(0, 0, 0, 0.652);
+  transition: 0.3s all ease;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.page-3 .top-section #headlines button:hover {
+  background-color: rgba(0, 0, 0, 0.634);
+  color: white;
+  transition: 0.3s all ease;
+}
+.page-3 .top-section #textline {
+  padding-left: 8rem;
+  margin-top: 4rem;
+  padding-right: 2rem;
+}
+.page-3 .top-section #textline p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #848688;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  padding-left: 2rem;
+}
+.page-3 .bottom-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem 4.5rem;
+  margin-top: 2rem;
+}
+.page-3 .bottom-section .cards {
+  height: 450px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.297);
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.277);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.page-3 .bottom-section .cards .card-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  color: #fff;
+}
+.page-3 .bottom-section .cards h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.page-3 .bottom-section .cards p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #dcdada;
+}
+.page-3 .bottom-section .cards img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 20px;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
