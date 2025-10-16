@@ -13,8 +13,6 @@ main {
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 
 .page-1 {
@@ -386,4 +384,37 @@ main {
      object-position: center;
   border-radius: 20px;
   display: block;
+}
+
+.page-4 {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  background-color: #f6f7f9;
+  padding-left: 4.5rem;
+  padding-right: 1rem;
+}
+.page-4 #headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+}
+.page-4 #headline #left-headline button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #848688;
+  border: 1px solid rgba(0, 0, 0, 0.652);
+  transition: 0.3s all ease;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.page-4 #headline #left-headline button:hover {
+  background-color: rgba(0, 0, 0, 0.634);
+  color: white;
+  transition: 0.3s all ease;
 }/*# sourceMappingURL=style.css.map */
